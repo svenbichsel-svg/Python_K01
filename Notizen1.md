@@ -1,16 +1,19 @@
 # Tag 1
 
 ## Auf GitHub hochladen
+    git add -A
+    git commit -m "Initial commit"
+    git push origin main
+
+## Übungen Tag 1
 
 
-## Übungen 
 
 
 
+# Tag 2
 
-
-
-
+## Übungen Tag 2
 
 
 
