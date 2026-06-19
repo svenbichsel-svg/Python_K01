@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_36dd000a2f819cf56b423ffb457eacf9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_36dd000a2f819cf56b423ffb457eacf9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_36dd000a2f819cf56b423ffb457eacf9 = L.map(
+                "map_36dd000a2f819cf56b423ffb457eacf9",
+                {
+                    center: [46.98176533452738, 7.487253888073257],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ea50558f7728b806588e4ca59d1d9981 = L.tileLayer(
+                "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "swisstopo",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ea50558f7728b806588e4ca59d1d9981.addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+        function geo_json_225a407ccc894192d89844a3791575d2_styler(feature) {
+            switch(feature.id) {
+                case "0": 
+                    return {"color": "black", "fillColor": "#e41a1c", "fillOpacity": 0.4, "weight": 1};
+                case "1": 
+                    return {"color": "black", "fillColor": "#377eb8", "fillOpacity": 0.4, "weight": 1};
+                default:
+                    return {"color": "black", "fillColor": "#4daf4a", "fillOpacity": 0.4, "weight": 1};
+            }
+        }
+
+        function geo_json_225a407ccc894192d89844a3791575d2_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_225a407ccc894192d89844a3791575d2 = L.geoJson(null, {
+                onEachFeature: geo_json_225a407ccc894192d89844a3791575d2_onEachFeature,
+            
+                style: geo_json_225a407ccc894192d89844a3791575d2_styler,
+            ...{
+}
+        });
+
+        function geo_json_225a407ccc894192d89844a3791575d2_add (data) {
+            geo_json_225a407ccc894192d89844a3791575d2
+                .addData(data);
+        }
+            geo_json_225a407ccc894192d89844a3791575d2_add({"bbox": [7.372783952719588, 46.72350462262133, 8.228756417934143, 47.08598919367132], "features": [{"bbox": [7.372783952719588, 46.90563888613226, 7.767858540048915, 47.08598919367132], "geometry": {"coordinates": [[[7.373007607690564, 46.90608737368673], [7.766759451035191, 46.90563888613226], [7.767858540048915, 47.08553922348999], [7.372783952719588, 47.08598919367132], [7.373007607690564, 46.90608737368673]]], "type": "Polygon"}, "id": "0", "properties": {"code": "Nord", "name": "Zone Nord"}, "type": "Feature"}, {"bbox": [7.373007607690564, 46.72573331353263, 7.766759451035191, 46.90608737368673], "geometry": {"coordinates": [[[7.373229761345373, 46.72618032839058], [7.765667684583499, 46.72573331353263], [7.766759451035191, 46.90563888613226], [7.373007607690564, 46.90608737368673], [7.373229761345373, 46.72618032839058]]], "type": "Polygon"}, "id": "1", "properties": {"code": "S\u00fcd", "name": "Zone S\u00fcd"}, "type": "Feature"}, {"bbox": [7.765667684583499, 46.72350462262133, 8.228756417934143, 47.08553922348999], "geometry": {"coordinates": [[[7.765667684583499, 46.72573331353263], [8.223489965798846, 46.72350462262133], [8.228756417934143, 47.083295725660015], [7.767858540048915, 47.08553922348999], [7.765667684583499, 46.72573331353263]]], "type": "Polygon"}, "id": "2", "properties": {"code": "Ost", "name": "Zone Ost"}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_225a407ccc894192d89844a3791575d2.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["code"];
+    let aliases = ["Zone:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_225a407ccc894192d89844a3791575d2.addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            var marker_a22ce94ed934d06fd1c20ecd53d4d020 = L.marker(
+                [46.87696822762355, 7.465197704473807],
+                {
+}
+            ).addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            marker_a22ce94ed934d06fd1c20ecd53d4d020.bindTooltip(
+                `<div>
+                     Zimmerwald: 898 m.ü.M. | Zone: Süd
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_760b4738cfb6987f9a2bfcf8797baac7 = L.marker(
+                [46.97780016859498, 7.528080915807405],
+                {
+}
+            ).addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            marker_760b4738cfb6987f9a2bfcf8797baac7.bindTooltip(
+                `<div>
+                     Bantiger: 947 m.ü.M. | Zone: Nord
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_074fd95b02dff960e23156a9401438bf = L.marker(
+                [46.91736870485957, 7.443595354798481],
+                {
+}
+            ).addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            marker_074fd95b02dff960e23156a9401438bf.bindTooltip(
+                `<div>
+                     Gurten: 858 m.ü.M. | Zone: Nord
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a247aba0e9962d66ccf584dfc59b317 = L.marker(
+                [47.13307039770621, 7.0593765228852305],
+                {
+}
+            ).addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            marker_6a247aba0e9962d66ccf584dfc59b317.bindTooltip(
+                `<div>
+                     Chasseral: 1606 m.ü.M. | Zone: keine Zone
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac487cab10b8e208b04afc3ad12fc5f1 = L.marker(
+                [47.003619173852606, 7.940018942401356],
+                {
+}
+            ).addTo(map_36dd000a2f819cf56b423ffb457eacf9);
+        
+    
+            marker_ac487cab10b8e208b04afc3ad12fc5f1.bindTooltip(
+                `<div>
+                     Napf: 1406 m.ü.M. | Zone: Ost
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

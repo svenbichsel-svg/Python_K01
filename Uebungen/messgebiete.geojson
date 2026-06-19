@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {"name": "urn:ogc:def:crs:EPSG::2056"}
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Zone Nord", "code": "Nord"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2595000, 1195000], [2625000, 1195000], [2625000, 1215000], [2595000, 1215000], [2595000, 1195000]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Zone Süd", "code": "Süd"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2595000, 1175000], [2625000, 1175000], [2625000, 1195000], [2595000, 1195000], [2595000, 1175000]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Zone Ost", "code": "Ost"},
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[2625000, 1175000], [2660000, 1175000], [2660000, 1215000], [2625000, 1215000], [2625000, 1175000]]]
+      }
+    }
+  ]
+}

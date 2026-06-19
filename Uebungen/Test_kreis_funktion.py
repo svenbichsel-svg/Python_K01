@@ -1,7 +1,7 @@
 import math
 import pytest
 
-from kreis_funktion import calc_diameter, circumference, calc_area
+from Uebungen.kreis_funktion import calc_diameter, circumference, calc_area
 
 def test_durchmesser():
     assert calc_diameter(5) == 10

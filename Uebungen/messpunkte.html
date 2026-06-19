@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4dd141940287735b5db9623c8ff9b10 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b4dd141940287735b5db9623c8ff9b10" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b4dd141940287735b5db9623c8ff9b10 = L.map(
+                "map_b4dd141940287735b5db9623c8ff9b10",
+                {
+                    center: [46.98176533452738, 7.487253888073257],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f99e42cb31c791405f86c818189a04b7 = L.tileLayer(
+                "https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "swisstopo",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f99e42cb31c791405f86c818189a04b7.addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            var marker_310fad75c3f85414977a48e5495c0b21 = L.marker(
+                [46.87696822762355, 7.465197704473807],
+                {
+}
+            ).addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            marker_310fad75c3f85414977a48e5495c0b21.bindTooltip(
+                `<div>
+                     Zimmerwald: 898 m.ü.M.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e7398a550de97a3e724e0dc5e2b7145 = L.marker(
+                [46.97780016859498, 7.528080915807405],
+                {
+}
+            ).addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            marker_5e7398a550de97a3e724e0dc5e2b7145.bindTooltip(
+                `<div>
+                     Bantiger: 947 m.ü.M.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3cc711a696c2f75b3c560fb6738dc6b1 = L.marker(
+                [46.91736870485957, 7.443595354798481],
+                {
+}
+            ).addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            marker_3cc711a696c2f75b3c560fb6738dc6b1.bindTooltip(
+                `<div>
+                     Gurten: 858 m.ü.M.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_881a63f378b4c1f5a6b75acc02c84990 = L.marker(
+                [47.13307039770621, 7.0593765228852305],
+                {
+}
+            ).addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            marker_881a63f378b4c1f5a6b75acc02c84990.bindTooltip(
+                `<div>
+                     Chasseral: 1606 m.ü.M.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b8ce0b15f22faea0244cfefbd9cb4b8 = L.marker(
+                [47.003619173852606, 7.940018942401356],
+                {
+}
+            ).addTo(map_b4dd141940287735b5db9623c8ff9b10);
+        
+    
+            marker_7b8ce0b15f22faea0244cfefbd9cb4b8.bindTooltip(
+                `<div>
+                     Napf: 1406 m.ü.M.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
